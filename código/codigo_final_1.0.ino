@@ -1,12 +1,12 @@
-// Importação das bibliotecas do sensor acelerômetro
+//bibliotecas do sensor MPU e do módulo para o micro SD
 #include <Wire.h>
 #include <MPU6050.h>
 #include <SD.h>
 
-// Criando um objeto mpu para o sensor
+//criação do objeto mpu para o sensor
 MPU6050 mpu;
 
-// Variáveis de offset
+// Variáveis de offset para calibrar o giroscópio e acelerômetro
 int16_t ax_offset, ay_offset, az_offset;
 int16_t gx_offset, gy_offset, gz_offset;
 
